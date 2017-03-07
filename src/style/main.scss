@@ -1,0 +1,85 @@
+@import "./header.scss";
+
+$fawesome: FontAwesome;
+$man_bg: #f2f2f2;
+
+@keyframes test {
+  from {
+    top: 22px;
+  }
+
+  to {
+    top: 100px;
+  }
+}
+
+.nav {
+  background: #000;
+}
+
+.list {
+
+    background: $man_bg;
+    padding: 15px;
+
+    &__row {
+      padding: 15px;
+      background: #fff;
+      display: inline-block;
+
+      &__img {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    }
+}
+
+.info {
+
+    &__star {
+      .star {
+
+        //text-indent:-999px;
+
+        &:before {
+          font-family:$fawesome;
+          content: "\f005";
+          color: #febb02;
+        }
+      }
+  }
+
+  &__address {
+
+  }
+
+  &__price {
+
+    color: green;
+    font-size: 36px;
+  }
+
+  &__button {
+
+    .btn_clear:before {
+      font-family:$fawesome;
+      content: "\f00d";
+      color: red;
+    }
+  }
+}
+
+.add-hotel-wrapper {
+  background: $man_bg;
+  padding: 25px;
+  width: 500px;
+  display: none;
+}
+
+.add_button_cintainer {
+  margin-bottom: 15px;
+}
+
+
+
